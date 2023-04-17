@@ -45,8 +45,6 @@
 		B072A04327F04C0F00419BF1 /* LocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04127F04C0F00419BF1 /* LocationUtils.swift */; };
 		B072A04427F04C0F00419BF1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04227F04C0F00419BF1 /* Location.swift */; };
 		B072A04727F04C9100419BF1 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04627F04C9100419BF1 /* TypeAliases.swift */; };
-		B072A04D27F05D8500419BF1 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04927F05D8500419BF1 /* Localization.swift */; };
-		B072A04E27F05D8500419BF1 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04A27F05D8500419BF1 /* Language.swift */; };
 		B072A05027F05D8500419BF1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04C27F05D8500419BF1 /* Extensions.swift */; };
 		B072A05E27F05DEF00419BF1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05227F05DEF00419BF1 /* Roboto-Italic.ttf */; };
 		B072A05F27F05DEF00419BF1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05327F05DEF00419BF1 /* Roboto-Black.ttf */; };
@@ -61,13 +59,12 @@
 		B072A06827F05DEF00419BF1 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05C27F05DEF00419BF1 /* Roboto-ThinItalic.ttf */; };
 		B072A06927F05DEF00419BF1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05D27F05DEF00419BF1 /* Roboto-BlackItalic.ttf */; };
 		B072A06B27F05E0F00419BF1 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A06A27F05E0F00419BF1 /* UIFont+Extensions.swift */; };
-		B072A07027F05EE600419BF1 /* BaseDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A06E27F05EE600419BF1 /* BaseDefaults.swift */; };
-		B072A07127F05EE600419BF1 /* BaseDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A06F27F05EE600419BF1 /* BaseDefaultsKeys.swift */; };
+		B072A07027F05EE600419BF1 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A06E27F05EE600419BF1 /* AppDefaults.swift */; };
+		B072A07127F05EE600419BF1 /* AppDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A06F27F05EE600419BF1 /* AppDefaultsKeys.swift */; };
 		B072A16427F077E000419BF1 /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16327F077E000419BF1 /* BaseValidator.swift */; };
 		B072A17027F07A6C00419BF1 /* Obfuscated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16E27F07A6C00419BF1 /* Obfuscated.swift */; };
 		B072A17127F07A6C00419BF1 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16F27F07A6C00419BF1 /* Obfuscator.swift */; };
 		B072A17427F07ADB00419BF1 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A17327F07ADB00419BF1 /* System.swift */; };
-		B072A20C27F0AFAD00419BF1 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B072A20B27F0AFAD00419BF1 /* Localization.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,8 +132,6 @@
 		B072A04127F04C0F00419BF1 /* LocationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtils.swift; sourceTree = "<group>"; };
 		B072A04227F04C0F00419BF1 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B072A04627F04C9100419BF1 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		B072A04927F05D8500419BF1 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		B072A04A27F05D8500419BF1 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B072A04C27F05D8500419BF1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B072A05227F05DEF00419BF1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		B072A05327F05DEF00419BF1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
@@ -151,13 +146,12 @@
 		B072A05C27F05DEF00419BF1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		B072A05D27F05DEF00419BF1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		B072A06A27F05E0F00419BF1 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
-		B072A06E27F05EE600419BF1 /* BaseDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDefaults.swift; sourceTree = "<group>"; };
-		B072A06F27F05EE600419BF1 /* BaseDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDefaultsKeys.swift; sourceTree = "<group>"; };
+		B072A06E27F05EE600419BF1 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		B072A06F27F05EE600419BF1 /* AppDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaultsKeys.swift; sourceTree = "<group>"; };
 		B072A16327F077E000419BF1 /* BaseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
 		B072A16E27F07A6C00419BF1 /* Obfuscated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscated.swift; sourceTree = "<group>"; };
 		B072A16F27F07A6C00419BF1 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		B072A17327F07ADB00419BF1 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		B072A20B27F0AFAD00419BF1 /* Localization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Localization.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,9 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				B072A04C27F05D8500419BF1 /* Extensions.swift */,
-				B072A04A27F05D8500419BF1 /* Language.swift */,
-				B072A04927F05D8500419BF1 /* Localization.swift */,
-				B072A20B27F0AFAD00419BF1 /* Localization.bundle */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -348,8 +339,8 @@
 		B072A06D27F05ECB00419BF1 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				B072A06E27F05EE600419BF1 /* BaseDefaults.swift */,
-				B072A06F27F05EE600419BF1 /* BaseDefaultsKeys.swift */,
+				B072A06E27F05EE600419BF1 /* AppDefaults.swift */,
+				B072A06F27F05EE600419BF1 /* AppDefaultsKeys.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -474,7 +465,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B072A06827F05DEF00419BF1 /* Roboto-ThinItalic.ttf in Resources */,
-				B072A20C27F0AFAD00419BF1 /* Localization.bundle in Resources */,
 				B072A06727F05DEF00419BF1 /* Roboto-BoldItalic.ttf in Resources */,
 				B072A05E27F05DEF00419BF1 /* Roboto-Italic.ttf in Resources */,
 				B072A06227F05DEF00419BF1 /* Roboto-Bold.ttf in Resources */,
@@ -546,14 +536,12 @@
 				B072A05027F05D8500419BF1 /* Extensions.swift in Sources */,
 				B072A03527F04AF000419BF1 /* CharacterSet+Extensions.swift in Sources */,
 				B072A03427F04AF000419BF1 /* Bool+Extensions.swift in Sources */,
-				B072A04D27F05D8500419BF1 /* Localization.swift in Sources */,
-				B072A07027F05EE600419BF1 /* BaseDefaults.swift in Sources */,
-				B072A07127F05EE600419BF1 /* BaseDefaultsKeys.swift in Sources */,
+				B072A07027F05EE600419BF1 /* AppDefaults.swift in Sources */,
+				B072A07127F05EE600419BF1 /* AppDefaultsKeys.swift in Sources */,
 				B072A04727F04C9100419BF1 /* TypeAliases.swift in Sources */,
 				B072A03227F04AF000419BF1 /* String+Extension.swift in Sources */,
 				B072A02E27F04AF000419BF1 /* Bundle+Extensions.swift in Sources */,
 				B072A01727F04A2400419BF1 /* Cache.swift in Sources */,
-				B072A04E27F05D8500419BF1 /* Language.swift in Sources */,
 				B072A17127F07A6C00419BF1 /* Obfuscator.swift in Sources */,
 				B072A03F27F04AF000419BF1 /* Sequence+Extensions.swift in Sources */,
 				B072A16427F077E000419BF1 /* BaseValidator.swift in Sources */,

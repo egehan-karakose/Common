@@ -41,7 +41,7 @@ public extension Date {
     func string(_ type: DateStringType = .ddMMyyyy, withToday: Bool = false) -> String {
         var formatter: DateFormatter?
         formatter = DateFormatter()
-        formatter?.locale = Locale(identifier: Localization.currentLanguage.asParameter)
+        formatter?.locale = Locale.current
         formatter?.dateFormat = type.rawValue
         var returnValue: String?
         returnValue = formatter?.string(from: self)
@@ -93,7 +93,7 @@ public extension Date {
     func getLocaleBaseDay() -> Date {
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "yyyy-MMM-dd"
-        dateformatter.locale = Locale(identifier: Localization.currentLanguage.asParameter)
+        dateformatter.locale = Locale.current
         let stringFromDate = dateformatter.string(from: self)
         if let startOfToday = dateformatter.date(from: stringFromDate) {
             return startOfToday
@@ -141,6 +141,7 @@ extension Date {
             byAdding: .year,
             value: -1, to: self)!
     }
+    
     public func getLastMonth() -> Date {
         return Calendar.current.date(
             byAdding: .month,
@@ -152,25 +153,61 @@ extension Date {
             byAdding: .month,
             value: -3, to: Date())!
     }
+    
     public func getMonthText() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale =  Locale(identifier: Localization.currentLanguage.asParameter)
+        dateFormatter.locale =  Locale.current
         dateFormatter.dateFormat = "LLLL"
         return dateFormatter.string(from: self)
     }
+    
     public func getDayAndMonthText() -> String {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.day, .month], from: self)
         let dateFormatter = DateFormatter()
-        dateFormatter.locale =  Locale(identifier: Localization.currentLanguage.asParameter)
+        dateFormatter.locale =  Locale.current
         let monthName = dateFormatter.monthSymbols[(components.month ?? 1) - 1]
         return String(format: "%02d %@", components.day ?? 1, monthName)
     }
+    
+    public func getDayMonthYearText() -> String {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day, .month, .year], from: self)
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale =  Locale.current
+        let monthName = dateFormatter.monthSymbols[(components.month ?? 1) - 1]
+        return String(format: "%02d %@ %d", components.day ?? 1, monthName, components.year ?? 2022)
+    }
+    
     public func getMonthAndYearText() -> String {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.month, .year], from: self)
         return String(format: "%02d/%d", components.month ?? 1, components.year ?? 1800)
     }
+    
+    public func getHourAndMinute() -> String {
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: self)
+        let minutes = calendar.component(.minute, from: self)
+        return String(format: "%02d:%02d", hour, minutes)
+    }
+    
+    public func dayOfTheWeek() -> String? {
+            let weekdays = [
+                "Pazar".localized,
+                "Pazartesi".localized,
+                "Salı".localized,
+                "Çarşamba".localized,
+                "Perşembe".localized,
+                "Cuma".localized,
+                "Cumartesi".localized
+            ]
+
+            let calendar = Calendar.current
+            let components = calendar.component(.weekday, from: self)
+            return weekdays[components - 1]
+        }
+    
     public func getDateOfWeekDay(direction: Calendar.SearchDirection, weekDay: Int, considerToday consider: Bool = false) -> Date {
       let calendar = Calendar(identifier: .gregorian)
       if consider && calendar.component(.weekday, from: self) == weekDay {
@@ -191,3 +228,4 @@ extension Date {
         return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonth())!
     }
 }
+
