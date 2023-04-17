@@ -401,5 +401,12 @@ extension String {
                            lastNumberPart)
     }
     
+    public func slice(from: String, toward: String) -> String? {
+            let rangeFrom = range(of: from)?.upperBound ?? self.startIndex
+            guard let rangeTo = self[rangeFrom...].range(of: toward)?.lowerBound else {
+                return String(self[rangeFrom..<self.endIndex])
+            }
+            return String(self[rangeFrom..<rangeTo])
+        }
 }
 //swiftlint:enable file_length
