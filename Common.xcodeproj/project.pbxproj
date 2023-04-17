@@ -65,6 +65,7 @@
 		B072A17027F07A6C00419BF1 /* Obfuscated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16E27F07A6C00419BF1 /* Obfuscated.swift */; };
 		B072A17127F07A6C00419BF1 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16F27F07A6C00419BF1 /* Obfuscator.swift */; };
 		B072A17427F07ADB00419BF1 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A17327F07ADB00419BF1 /* System.swift */; };
+		D860281729EDCA6100E2607C /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860281629EDCA6100E2607C /* GlobalFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		B072A16E27F07A6C00419BF1 /* Obfuscated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscated.swift; sourceTree = "<group>"; };
 		B072A16F27F07A6C00419BF1 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		B072A17327F07ADB00419BF1 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		D860281629EDCA6100E2607C /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				B072A00427F04A2400419BF1 /* ParametersHelper.swift */,
 				B072A00927F04A2400419BF1 /* SafeUnwrap.swift */,
 				B072A00527F04A2400419BF1 /* UIImageViewHelper.swift */,
+				D860281629EDCA6100E2607C /* GlobalFunctions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			files = (
 				B072A01427F04A2400419BF1 /* AttributedStringBuilder.swift in Sources */,
 				B072A04427F04C0F00419BF1 /* Location.swift in Sources */,
+				D860281729EDCA6100E2607C /* GlobalFunctions.swift in Sources */,
 				B072A03627F04AF000419BF1 /* NSAttributedString+Extensions.swift in Sources */,
 				B072A01327F04A2400419BF1 /* Haptics.swift in Sources */,
 				B072A00F27F04A2400419BF1 /* DateHelper.swift in Sources */,

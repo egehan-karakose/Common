@@ -8,7 +8,7 @@ import Foundation
 
 extension Bundle {
     
-    public static let uiComp = Bundle(identifier: "egehankarakose.Comp")
+    public static let comp = Bundle(identifier: "egehankarakose.Comp")
     public static let common = Bundle(identifier: "egehankarakose.Common")
     
 }
