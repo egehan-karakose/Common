@@ -1,55 +1,39 @@
 //
-//  UIColor+Extensions.swift
-//  Common
+//  UIColor+Extention.swift
+//  DareDicecommon
 //
-// Created by Egehan KARAKÖSE (Dijital Kanallar Uygulama Geliştirme Müdürlüğü) on 27.03.2022.
+//  Created by Egehan KARAKÖSE (Dijital Kanallar Uygulama Geliştirme Müdürlüğü) on 31.05.2022.
+//
 
-import Foundation
+import UIKit
 
 extension UIColor {
+    public static let appPinkBackground: UIColor = UIColor(named: "appPinkBackground", in: .common, compatibleWith: nil) ?? .systemPink
+    public static let appPurpleBackground: UIColor = UIColor(named: "appPurpleBackground", in: .common, compatibleWith: nil) ?? .systemPurple
+    public static let appMainBackgroundColor: UIColor = UIColor(named: "appMainBackgroundColor", in: .common, compatibleWith: nil) ?? .systemBackground
+    public static let appYellowBackground: UIColor = UIColor(named: "appYellowBackground", in: .common, compatibleWith: nil) ?? .systemYellow
+    public static let appGreenBackground: UIColor = UIColor(named: "appGreenBackground", in: .common, compatibleWith: nil) ?? .systemGreen
+    public static let appButtonBlue: UIColor = UIColor(named: "appButtonBlue", in: .common, compatibleWith: nil) ?? .blue
+    public static let appLightGreen: UIColor = UIColor(named: "appLightGreen", in: .common, compatibleWith: nil) ?? .green
+    public static let appDarkGreen: UIColor = UIColor(named: "appDarkGreen", in: .common, compatibleWith: nil) ?? .green
+    public static let appLightPink: UIColor = UIColor(named: "appLightPink", in: .common, compatibleWith: nil) ?? .systemPink
+    public static let appDarkPink: UIColor = UIColor(named: "appDarkPink", in: .common, compatibleWith: nil) ?? systemPink
     
-    // MARK: Primary
-    public static let navigationTitle: UIColor = UIColor(rgb: 0x383838, alpha: 1)
+    public static let boldFontColor: UIColor = UIColor(named: "boldFontColor", in: .common, compatibleWith: nil) ?? .black
     
-    public static let appYellow: UIColor = UIColor(rgb: 0xFCB000, alpha: 1)
-    public static let appDarkYellow: UIColor = UIColor(rgb: 0xF4A302, alpha: 1)
-    public static let appOrange: UIColor = UIColor(rgb: 0xE68A06, alpha: 1)
-    public static let appDarkOrange: UIColor = UIColor(rgb: 0xDE770B, alpha: 1)
-    public static let appBlack1: UIColor = UIColor(rgb: 0x383838, alpha: 1)
-    public static let appBlack2: UIColor = UIColor(rgb: 0x514F4F, alpha: 1)
-    public static let appDisableGray: UIColor = UIColor(rgb: 0xD6D6D6, alpha: 1)
+    public static let labelBackground: UIColor = UIColor(named: "labelBackground", in: .common, compatibleWith: nil) ?? .white
     
-    // MARK: Secondary
+    public static let appBlack1: UIColor = UIColor(named: "appBlack1", in: .common, compatibleWith: nil) ?? .black
+    public static let appBlack2: UIColor = UIColor(named: "appBlack2", in: .common, compatibleWith: nil) ?? .black
+    public static let appDisableGray: UIColor = UIColor(named: "appTextDarkGray", in: .common, compatibleWith: nil) ?? .gray
+    public static let appTextGray: UIColor = UIColor(named: "appTextGray", in: .common, compatibleWith: nil) ?? .gray
+    public static let appTextBlack: UIColor = UIColor(named: "appTextBlack", in: .common, compatibleWith: nil) ?? .black
+    public static let appBoldTextBlack: UIColor = UIColor(named: "appBoldTextBlack", in: .common, compatibleWith: nil) ?? .black
+    public static let appWhiteBackground: UIColor = UIColor(named: "appWhiteBackground", in: .common, compatibleWith: nil) ?? .white
+    public static let textViewPinkBackground: UIColor = UIColor(named: "textViewPinkBackground", in: .common, compatibleWith: nil) ?? .white
+    public static let appMainDarkBackground: UIColor = UIColor(named: "appMainDarkBackground", in: .common, compatibleWith: nil) ?? .systemBackground
+    public static let appPink2: UIColor = UIColor(named: "appPink2", in: .common, compatibleWith: nil) ?? .systemBackground
     
-    public static let appInvidualWebGray: UIColor = UIColor(rgb: 0xF2F2F2, alpha: 1)
-    public static let appDarkGray: UIColor = UIColor(rgb: 0x737171, alpha: 1)
-    public static let appGray: UIColor = UIColor(rgb: 0xA8A6A6, alpha: 1)
-    public static let appLightGray: UIColor = UIColor(rgb: 0xDEDEDE, alpha: 1)
-    public static let appGreen: UIColor = UIColor(rgb: 0x7ED321, alpha: 1)
-    public static var appRed: UIColor = UIColor(rgb: 0xD0021B, alpha: 1)
-    public static var appDarkRed: UIColor = UIColor(rgb: 0x942020, alpha: 1)
-    
-    // MARK: Background
-    
-    public static let appBackgroundDarkGray: UIColor = UIColor(rgb: 0xE5E5E5, alpha: 1)
-    public static let appBackgroundGray: UIColor = UIColor(rgb: 0xF4F4F4, alpha: 1)
-    public static let appBackgroundLightGray: UIColor = UIColor(rgb: 0x8E8E93, alpha: 0.12)
-    
-    // MARK: Others
-    
-    public static let cellDividerColor: UIColor = #colorLiteral(red: 0.8705882353, green: 0.8705882353, blue: 0.8705882353, alpha: 1)
-    public static let backgroundWhite: UIColor = #colorLiteral(red: 0.9568627451, green: 0.9568627451, blue: 0.9568627451, alpha: 1)
-    public static let defaultTextColor: UIColor = #colorLiteral(red: 0.09411764706, green: 0.09411764706, blue: 0.09411764706, alpha: 1)
-    public static let textColor: UIColor = #colorLiteral(red: 0.3176470588, green: 0.3098039216, blue: 0.3098039216, alpha: 1)
-    public static let descriptionTextColor = #colorLiteral(red: 0.4509803922, green: 0.4431372549, blue: 0.4431372549, alpha: 1)
-    public static let selectedTextColor: UIColor = #colorLiteral(red: 0.3176470588, green: 0.3098039216, blue: 0.3098039216, alpha: 1)
-    
-    // MARK: SKY
-    
-    public static let skyDarkBlue: UIColor = UIColor(rgb: 0x242F3E, alpha: 1)
-    public static let skyBlue: UIColor = UIColor(rgb: 0x242F3E, alpha: 1)
-    
-    // MARK: init
     
     public convenience init(rgb: UInt, alpha: CGFloat) {
         self.init(
@@ -60,21 +44,21 @@ extension UIColor {
         )
     }
     
-    public convenience init(hexString: String, alpha: CGFloat = 1.0) {
-        let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        let scanner = Scanner(string: hexString)
-        if hexString.hasPrefix("#") {
-            scanner.scanLocation = 1
-        }
-        var color: UInt32 = 0
-        scanner.scanHexInt32(&color)
-        let mask = 0x000000FF
-        let redMasked = Int(color >> 16) & mask
-        let greenMasked = Int(color >> 8) & mask
-        let blueMasked = Int(color) & mask
-        let red   = CGFloat(redMasked) / 255.0
-        let green = CGFloat(greenMasked) / 255.0
-        let blue  = CGFloat(blueMasked) / 255.0
-        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    public convenience init?(hexString: String, alpha: CGFloat = 1.0) {
+        guard hexString.hasColorRepresentation() else { return nil }
+        
+        let valueText = hexString.replacingOccurrences(of: "#", with: "").trimmingCharacters(in: .whitespacesAndNewlines)
+        let value = UInt(valueText, radix: 16) ?? 0
+        self.init(rgb: value, alpha: alpha)
+    }
+    
+}
+
+extension String {
+    func hasColorRepresentation() -> Bool {
+        let colorRegex = "(?:#)?([0-9A-Fa-f]{6})"
+        return range(of: colorRegex, options: .regularExpression) != nil
     }
 }
+
+

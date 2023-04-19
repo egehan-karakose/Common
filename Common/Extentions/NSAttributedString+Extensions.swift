@@ -8,7 +8,7 @@ import Foundation
 public extension NSAttributedString {
     public func getAttributedKey(with string: String?) -> NSAttributedString? {
         let attributedKey = AttributedStringBuilder()
-            .setForegroundColor(.appGray)
+            .setForegroundColor(.appTextGray)
             .setFont(.regular(of: 14))
             .setTextAlignment(.left)
             .setLineSpacing(4)

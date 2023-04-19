@@ -66,6 +66,7 @@
 		B072A17127F07A6C00419BF1 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16F27F07A6C00419BF1 /* Obfuscator.swift */; };
 		B072A17427F07ADB00419BF1 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A17327F07ADB00419BF1 /* System.swift */; };
 		D860281729EDCA6100E2607C /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860281629EDCA6100E2607C /* GlobalFunctions.swift */; };
+		D88EAE0929F030C500F9F6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88EAE0829F030C500F9F6B3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 		B072A16F27F07A6C00419BF1 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		B072A17327F07ADB00419BF1 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		D860281629EDCA6100E2607C /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		D88EAE0829F030C500F9F6B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				B0729FFD27F0496300419BF1 /* Architecture */,
 				B0729FA627F0448E00419BF1 /* Common.h */,
 				B0729FA727F0448E00419BF1 /* Common.docc */,
+				D88EAE0829F030C500F9F6B3 /* Assets.xcassets */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				B072A06227F05DEF00419BF1 /* Roboto-Bold.ttf in Resources */,
 				B072A06327F05DEF00419BF1 /* Roboto-Medium.ttf in Resources */,
 				B072A06927F05DEF00419BF1 /* Roboto-BlackItalic.ttf in Resources */,
+				D88EAE0929F030C500F9F6B3 /* Assets.xcassets in Resources */,
 				B072A06427F05DEF00419BF1 /* Roboto-MediumItalic.ttf in Resources */,
 				B072A06127F05DEF00419BF1 /* Roboto-Light.ttf in Resources */,
 				B072A06527F05DEF00419BF1 /* Roboto-Regular.ttf in Resources */,
